@@ -44,6 +44,9 @@ dependencies:
   pinia:
     specifier: ^2.1.7
     version: 2.1.7(vue@3.4.21)
+  tailwindcss:
+    specifier: ^3.4.1
+    version: 3.4.1
 
 devDependencies:
   '@types/node':

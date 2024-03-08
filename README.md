@@ -1,21 +1,21 @@
-# Nuxt 3 base layer
+# Nuxt 3 Base Layer
 
-I used to create Nuxt projects over and over again and copy these dependencies over and over again. This is seriously against the spirit of programming!
+Preset layer for common Nuxt 3 dependencies.
 
-This is a base layer for Nuxt 3 projects. It includes:
+> I used to create Nuxt projects over and over again and copy these dependencies over and over again. This is seriously against the spirit of programming!
 
-- [x] [Tailwind CSS](https://nuxt.com/modules/tailwindcss)
-- [x] [Color Mode](https://nuxt.com/modules/color-mode)
-- [x] [Auto Animation](https://nuxt.com/modules/auto-animate)
-- [x] [Pinia](https://nuxt.com/modules/pinia) & [Pinia Plugin Persistedstate](https://nuxt.com/modules/pinia-plugin-persistedstate)
-- [x] [VueUse](https://nuxt.com/modules/vueuse)
-- [x] [I18n](https://nuxt.com/modules/i18n)
-- [x] [Lodash](https://nuxt.com/modules/lodash)
-- [x] [Dayjs](https://nuxt.com/modules/dayjs)
-- [x] [Nuxt Image](https://nuxt.com/modules/image)
-- [x] [Nuxt Device](https://nuxt.com/modules/device)
+This is a base layer for Nuxt 3 projects. No subjective configurations are included here. It includes:
 
-No subjective configurations are included here.
+- [Tailwind CSS](https://nuxt.com/modules/tailwindcss)
+- [Color Mode](https://nuxt.com/modules/color-mode)
+- [Auto Animation](https://nuxt.com/modules/auto-animate)
+- [Pinia](https://nuxt.com/modules/pinia) & [Pinia Plugin Persistedstate](https://nuxt.com/modules/pinia-plugin-persistedstate)
+- [VueUse](https://nuxt.com/modules/vueuse)
+- [Nuxt i18n](https://nuxt.com/modules/i18n)
+- [lodash](https://nuxt.com/modules/lodash)
+- [dayjs](https://nuxt.com/modules/dayjs)
+- [Nuxt Image](https://nuxt.com/modules/image)
+- [Nuxt Device](https://nuxt.com/modules/device)
 
 This project is only used to constrain dependencies, so that we don't create the Nuxt project *from scratch*.
 
@@ -24,7 +24,7 @@ This project is only used to constrain dependencies, so that we don't create the
 Creating a new Nuxt project:
 
 ```bash
-pnpm dlx nuxi@latest init $your_project_name
+pnpm dlx nuxi@latest init $YOUR_PROJECT_NAME
 ```
 
 Add `@alexsun-top/nuxt-base-layer` to your project:
@@ -39,13 +39,30 @@ Add the layer to your Nuxt project:
 // nuxt.config.ts
 export default defineNuxtConfig({
   // ...
-  layers: [
+  extends: [
     '@alexsun-top/nuxt-base-layer',
   ],
 })
 ```
 
 ## Configuration
+
+You can disable some of the dependencies by setting the following environment variables:
+
+| Environment Variable               | Package                             |
+| ---------------------------------- | ----------------------------------- |
+| `BASE_DISABLE_TAILWINDCSS`         | `@nuxtjs/tailwindcss`               |
+| `BASE_DISABLE_COLORMODE`           | `@nuxtjs/color-mode`                |
+| `BASE_DISABLE_ICON`                | `nuxt-icon`                         |
+| `BASE_DISABLE_ANIMATE`             | `@formkit/auto-animate/nuxt`        |
+| `BASE_DISABLE_PINIA`               | `@pinia/nuxt`                       |
+| `BASE_DISABLE_PINIAPERSISTEDSTATE` | `@pinia-plugin-persistedstate/nuxt` |
+| `BASE_DISABLE_VUEUSE`              | `@vueuse/nuxt`                      |
+| `BASE_DISABLE_I18N`                | `@nuxtjs/i18n`                      |
+| `BASE_DISABLE_LODASH`              | `nuxt-lodash`                       |
+| `BASE_DISABLE_IMAGE`               | `@nuxt/image`                       |
+| `BASE_DISABLE_DEVICE`              | `@nuxtjs/device`                    |
+| `BASE_DISABLE_DAYJS`               | `dayjs-nuxt`                        |
 
 ## License
 
