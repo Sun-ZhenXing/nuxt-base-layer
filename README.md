@@ -11,6 +11,7 @@ This is a base layer for Nuxt 3 projects. It includes:
 - [x] [VueUse](https://nuxt.com/modules/vueuse)
 - [x] [I18n](https://nuxt.com/modules/i18n)
 - [x] [Lodash](https://nuxt.com/modules/lodash)
+- [x] [Dayjs](https://nuxt.com/modules/dayjs)
 - [x] [Nuxt Image](https://nuxt.com/modules/image)
 - [x] [Nuxt Device](https://nuxt.com/modules/device)
 
