@@ -1,5 +1,7 @@
 # Nuxt 3 Base Layer
 
+[![npm](https://img.shields.io/npm/v/@alexsun-top/nuxt-base-layer?style=flat-square)](https://www.npmjs.com/package/@alexsun-top/nuxt-base-layer)
+
 Preset layer for common Nuxt 3 dependencies.
 
 > I used to create Nuxt projects over and over again and copy these dependencies over and over again. This is seriously against the spirit of programming!
