@@ -2,7 +2,7 @@
   "name": "@alexsun-top/nuxt-base-layer",
   "type": "module",
   "private": false,
-  "version": "0.1.2",
+  "version": "0.2.0",
   "main": "nuxt.config.ts",
   "author": "Alex Sun",
   "license": "MIT",
@@ -38,6 +38,7 @@
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
     "dayjs-nuxt": "^2.1.9",
+    "magic-regexp": "^0.8.0",
     "nuxt-icon": "^0.6.9",
     "nuxt-lodash": "^2.5.3",
     "pinia": "^2.1.7",
@@ -45,7 +46,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.28",
-    "nuxt": "^3.10.3",
+    "nuxt": "^3.11.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   }

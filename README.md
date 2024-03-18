@@ -1,10 +1,12 @@
 # Nuxt 3 Base Layer
 
+Nuxt 3 preset layer for common dependencies.
+
+> *I used to create Nuxt projects over and over again and copy these dependencies over and over again. This is seriously against the spirit of programming!*
+
+-----
+
 [![npm](https://img.shields.io/npm/v/@alexsun-top/nuxt-base-layer?style=flat-square)](https://www.npmjs.com/package/@alexsun-top/nuxt-base-layer)
-
-Preset layer for common Nuxt 3 dependencies.
-
-> I used to create Nuxt projects over and over again and copy these dependencies over and over again. This is seriously against the spirit of programming!
 
 This is a base layer for Nuxt 3 projects. No subjective configurations are included here. It includes:
 
@@ -32,7 +34,7 @@ pnpm dlx nuxi@latest init $YOUR_PROJECT_NAME
 Add `@alexsun-top/nuxt-base-layer` to your project:
 
 ```bash
-pnpm add -D @alexsun-top/nuxt-base-layer
+pnpm add -D @alexsun-top/nuxt-base-layer @vueuse/core
 ```
 
 Add the layer to your Nuxt project:
@@ -44,6 +46,26 @@ export default defineNuxtConfig({
   extends: [
     '@alexsun-top/nuxt-base-layer',
   ],
+})
+```
+
+If your dayjs goes wrong, you can add it to the `optimizeDeps`:
+
+```bash
+pnpm add -D dayjs
+```
+
+Configure `nuxt.config.ts`:
+
+```ts
+export default defineNuxtConfig({
+  vite: {
+    optimizeDeps: {
+      include: [
+        'dayjs',
+      ],
+    },
+  },
 })
 ```
 
@@ -65,6 +87,7 @@ You can disable some of the dependencies by setting the following environment va
 | `BASE_DISABLE_IMAGE`               | `@nuxt/image`                       |
 | `BASE_DISABLE_DEVICE`              | `@nuxtjs/device`                    |
 | `BASE_DISABLE_DAYJS`               | `dayjs-nuxt`                        |
+| `BASE_DISABLE_REGEXP`              | `magic-regexp/nuxt`                 |
 
 ## License
 
