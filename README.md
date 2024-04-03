@@ -87,7 +87,6 @@ You can disable some of the dependencies by setting the following environment va
 | `BASE_DISABLE_IMAGE`               | `@nuxt/image`                       |
 | `BASE_DISABLE_DEVICE`              | `@nuxtjs/device`                    |
 | `BASE_DISABLE_DAYJS`               | `dayjs-nuxt`                        |
-| `BASE_DISABLE_REGEXP`              | `magic-regexp/nuxt`                 |
 
 ## License
 

@@ -26,6 +26,5 @@ export default defineNuxtConfig({
     (!process.env.BASE_DISABLE_IMAGE || undefined) && '@nuxt/image',
     (!process.env.BASE_DISABLE_DEVICE || undefined) && '@nuxtjs/device',
     (!process.env.BASE_DISABLE_DAYJS || undefined) && 'dayjs-nuxt',
-    (!process.env.BASE_DISABLE_REGEXP || undefined) && 'magic-regexp/nuxt',
   ],
 })
