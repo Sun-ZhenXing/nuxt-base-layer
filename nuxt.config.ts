@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     // UI & Style
     (!process.env.BASE_DISABLE_TAILWINDCSS || undefined) && '@nuxtjs/tailwindcss',
     (!process.env.BASE_DISABLE_COLORMODE || undefined) && '@nuxtjs/color-mode',
-    (!process.env.BASE_DISABLE_ICON || undefined) && 'nuxt-icon',
+    (!process.env.BASE_DISABLE_ICON || undefined) && '@nuxt/icon',
 
     // Animation
     (!process.env.BASE_DISABLE_ANIMATE || undefined) && '@formkit/auto-animate/nuxt',
@@ -27,4 +27,6 @@ export default defineNuxtConfig({
     (!process.env.BASE_DISABLE_DEVICE || undefined) && '@nuxtjs/device',
     (!process.env.BASE_DISABLE_DAYJS || undefined) && 'dayjs-nuxt',
   ],
+
+  compatibilityDate: '2024-08-13',
 })
