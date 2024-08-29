@@ -2,7 +2,7 @@
   "name": "@alexsun-top/nuxt-base-layer",
   "type": "module",
   "private": false,
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "nuxt.config.ts",
   "packageManager": "pnpm@9.7.0",
   "author": "Alex Sun",
