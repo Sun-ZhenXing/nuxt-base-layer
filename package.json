@@ -4,7 +4,7 @@
   "private": false,
   "version": "0.2.3",
   "main": "nuxt.config.ts",
-  "packageManager": "pnpm@9.7.0",
+  "packageManager": "pnpm@9.10.0",
   "author": "Alex Sun",
   "license": "MIT",
   "keywords": [
@@ -32,31 +32,29 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "release:patch": "pnpm version patch && git push --follow-tags && pnpm publish",
-    "release:minor": "pnpm version minor && git push --follow-tags && pnpm publish",
-    "release:major": "pnpm version major && git push --follow-tags && pnpm publish"
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
   },
   "dependencies": {
-    "@formkit/auto-animate": "^0.8.2",
-    "@nuxt/icon": "^1.5.0",
-    "@nuxt/image": "^1.7.1",
-    "@nuxtjs/color-mode": "^3.4.4",
-    "@nuxtjs/device": "^3.2.0",
-    "@nuxtjs/i18n": "^8.5.1",
+    "@nuxt/icon": "^1.5.1",
+    "@nuxt/image": "^1.8.0",
+    "@nuxtjs/color-mode": "^3.5.1",
+    "@nuxtjs/i18n": "^8.5.3",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
     "@pinia/nuxt": "^0.5.4",
-    "@vueuse/core": "^11.0.3",
-    "@vueuse/nuxt": "^11.0.3",
+    "@types/node": "^22.5.5",
+    "@vueuse/nuxt": "^11.1.0",
     "dayjs-nuxt": "^2.1.11",
-    "nuxt-lodash": "^2.5.3",
     "pinia": "^2.2.2",
-    "tailwindcss": "^3.4.10"
+    "tailwindcss": "^3.4.11"
   },
-  "devDependencies": {
-    "@types/node": "^22.5.1",
-    "nuxt": "^3.13.0",
-    "vue": "^3.4.38",
-    "vue-router": "^4.4.3"
+  "peerDependencies": {
+    "@vueuse/core": "^11.1.0",
+    "nuxt": "^3.13.2",
+    "nuxt-lodash": "^2.5.3",
+    "vue": "^3.5.6",
+    "vue-router": "^4.4.5"
   }
 }

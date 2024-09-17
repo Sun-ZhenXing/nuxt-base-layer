@@ -8,9 +8,6 @@ export default defineNuxtConfig({
     (!process.env.BASE_DISABLE_COLORMODE || undefined) && '@nuxtjs/color-mode',
     (!process.env.BASE_DISABLE_ICON || undefined) && '@nuxt/icon',
 
-    // Animation
-    (!process.env.BASE_DISABLE_ANIMATE || undefined) && '@formkit/auto-animate/nuxt',
-
     // State management
     (!process.env.BASE_DISABLE_PINIA || undefined) && '@pinia/nuxt',
     (!process.env.BASE_DISABLE_PINIAPERSISTEDSTATE || undefined) && '@pinia-plugin-persistedstate/nuxt',
@@ -24,7 +21,6 @@ export default defineNuxtConfig({
     // Utils
     (!process.env.BASE_DISABLE_LODASH || undefined) && 'nuxt-lodash',
     (!process.env.BASE_DISABLE_IMAGE || undefined) && '@nuxt/image',
-    (!process.env.BASE_DISABLE_DEVICE || undefined) && '@nuxtjs/device',
     (!process.env.BASE_DISABLE_DAYJS || undefined) && 'dayjs-nuxt',
   ],
 

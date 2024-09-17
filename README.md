@@ -12,14 +12,12 @@ This is a base layer for Nuxt 3 projects. No subjective configurations are inclu
 
 - [Tailwind CSS](https://nuxt.com/modules/tailwindcss)
 - [Color Mode](https://nuxt.com/modules/color-mode)
-- [Auto Animation](https://nuxt.com/modules/auto-animate)
 - [Pinia](https://nuxt.com/modules/pinia) & [Pinia Plugin Persistedstate](https://nuxt.com/modules/pinia-plugin-persistedstate)
 - [VueUse](https://nuxt.com/modules/vueuse)
 - [Nuxt i18n](https://nuxt.com/modules/i18n)
 - [lodash](https://nuxt.com/modules/lodash)
 - [dayjs](https://nuxt.com/modules/dayjs)
 - [Nuxt Image](https://nuxt.com/modules/image)
-- [Nuxt Device](https://nuxt.com/modules/device)
 
 This project is only used to constrain dependencies, so that we don't create the Nuxt project *from scratch*.
 
@@ -78,14 +76,12 @@ You can disable some of the dependencies by setting the following environment va
 | `BASE_DISABLE_TAILWINDCSS`         | `@nuxtjs/tailwindcss`               |
 | `BASE_DISABLE_COLORMODE`           | `@nuxtjs/color-mode`                |
 | `BASE_DISABLE_ICON`                | `nuxt-icon`                         |
-| `BASE_DISABLE_ANIMATE`             | `@formkit/auto-animate/nuxt`        |
 | `BASE_DISABLE_PINIA`               | `@pinia/nuxt`                       |
 | `BASE_DISABLE_PINIAPERSISTEDSTATE` | `@pinia-plugin-persistedstate/nuxt` |
 | `BASE_DISABLE_VUEUSE`              | `@vueuse/nuxt`                      |
 | `BASE_DISABLE_I18N`                | `@nuxtjs/i18n`                      |
 | `BASE_DISABLE_LODASH`              | `nuxt-lodash`                       |
 | `BASE_DISABLE_IMAGE`               | `@nuxt/image`                       |
-| `BASE_DISABLE_DEVICE`              | `@nuxtjs/device`                    |
 | `BASE_DISABLE_DAYJS`               | `dayjs-nuxt`                        |
 
 ## License
